@@ -26,6 +26,12 @@
                 android:name=".ImageLoadActivity"
                 android:exported="false" />
 
+
+        <activity android:name=".TestServiceActivity"
+                android:exported="false"/>
+
+        <service android:name=".TestService" android:exported="false"/>
+
         <service
                 android:name=".ScreenRecordService"
                 android:label="辅助助手"
