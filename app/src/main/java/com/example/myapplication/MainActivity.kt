@@ -3,11 +3,10 @@ package com.example.myapplication
 import android.content.Intent
 import android.graphics.Bitmap
 import android.os.Bundle
-import android.provider.Settings
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.databinding.LayoutMainBinding
-import java.util.Objects
+import com.example.myapplication.process.MainProcessActivity
 
 
 class MainActivity : AppCompatActivity() {
@@ -36,6 +35,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.testServiceBtn.setOnClickListener {
             TestServiceActivity.launch(this@MainActivity)
+        }
+
+        binding.testProcessBtn.setOnClickListener {
+            startActivity(Intent(this, MainProcessActivity::class.java))
         }
     }
 
