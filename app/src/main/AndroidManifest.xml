@@ -44,6 +44,9 @@
         <service
                 android:name=".TestService"
                 android:exported="false" />
+        <activity
+                android:name=".net.NetTestActivity"
+                android:exported="false" />
 
         <service
                 android:name=".ScreenRecordService"

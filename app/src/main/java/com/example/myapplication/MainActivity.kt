@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.databinding.LayoutMainBinding
+import com.example.myapplication.net.NetTestActivity
 import com.example.myapplication.process.MainProcessActivity
 
 
@@ -39,6 +40,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.testProcessBtn.setOnClickListener {
             startActivity(Intent(this, MainProcessActivity::class.java))
+        }
+
+        binding.testNetBtn.setOnClickListener {
+            startActivity(Intent(this, NetTestActivity::class.java))
         }
     }
 

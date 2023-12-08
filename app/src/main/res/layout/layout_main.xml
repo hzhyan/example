@@ -36,4 +36,12 @@
             android:text="测试多进程"
             android:textSize="16sp"/>
 
+    <Button
+            android:id="@+id/test_net_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="测试网络库"
+            android:textSize="16sp"/>
+
 </LinearLayout>
