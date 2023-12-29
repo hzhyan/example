@@ -16,7 +16,13 @@ class NetTestActivity: AppCompatActivity() {
         setContentView(binding.root)
 
         binding.launchBtn.setOnClickListener {
+//            for (index in 0 until 100) {
+//            }
             NetManager.doRequest()
+        }
+
+        binding.readBtn.setOnClickListener {
+            NetManager.read()
         }
 
     }

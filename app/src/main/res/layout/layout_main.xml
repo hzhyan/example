@@ -44,4 +44,21 @@
             android:text="测试网络库"
             android:textSize="16sp"/>
 
+    <Button
+            android:id="@+id/test_async_render_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="异步渲染测试"
+            android:textSize="16sp"/>
+
+    <Button
+            android:id="@+id/test_view_render_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="view绘制测试"
+            android:textSize="16sp"/>
+
+
 </LinearLayout>

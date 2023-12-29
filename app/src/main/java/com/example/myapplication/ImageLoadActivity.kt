@@ -31,6 +31,8 @@ class ImageLoadActivity : AppCompatActivity() {
                     .diskCacheStrategy(DiskCacheStrategy.NONE)
                     .into(binding.imageView)
         }
+
+        binding.loadBtn.post {  }
     }
 
 }

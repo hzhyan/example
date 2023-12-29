@@ -5,9 +5,11 @@ import android.graphics.Bitmap
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
+import com.example.myapplication.asyncrender.AsyncRenderActivity
 import com.example.myapplication.databinding.LayoutMainBinding
 import com.example.myapplication.net.NetTestActivity
 import com.example.myapplication.process.MainProcessActivity
+import com.example.myapplication.viewtest.ViewTestActivity
 
 
 class MainActivity : AppCompatActivity() {
@@ -24,6 +26,8 @@ class MainActivity : AppCompatActivity() {
             ImageLoadActivity.launch(this@MainActivity)
         }
 
+        run {  }
+
 //        val intent = Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)
 //        startActivity(intent)
 
@@ -31,7 +35,8 @@ class MainActivity : AppCompatActivity() {
 
         binding.newThreadBtn.setOnClickListener {
 //            testCreateBitmap()
-            testCreateThread()
+//            testCreateThread()
+            KotlinTest().loadData()
         }
 
         binding.testServiceBtn.setOnClickListener {
@@ -44,6 +49,14 @@ class MainActivity : AppCompatActivity() {
 
         binding.testNetBtn.setOnClickListener {
             startActivity(Intent(this, NetTestActivity::class.java))
+        }
+
+        binding.testAsyncRenderBtn.setOnClickListener {
+            startActivity(Intent(this, AsyncRenderActivity::class.java))
+        }
+
+        binding.testViewRenderBtn.setOnClickListener {
+            startActivity(Intent(this, ViewTestActivity::class.java))
         }
     }
 
